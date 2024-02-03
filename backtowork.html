@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../Font-Awesome-Icon/css/all.css">
+    <title>Back To Work</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .head ul {
+            display: flex;
+            margin-left: 12px;
+            background-color: rgb(221, 218, 218);
+            justify-content: space-between;
+        }
+
+        .head ul li {
+            list-style: none;
+            padding: 5px 0;
+            width: 20%;
+            text-align: center;
+
+        }
+
+        .head ul li a {
+            text-decoration: none;
+            color: rgb(14, 13, 13);
+        }
+
+        .head ul li:hover {
+            background-color: rgb(187, 187, 187);
+        }
+
+        img {
+            width: 100%;
+        }
+
+
+        .list-group button {
+            padding: 5px 10px;
+            font-size: 1rem;
+        }
+
+        .d-flex .essential {
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: 0.5s;
+            color: black;
+            font-weight: bold;
+        }
+
+        .col-3 div img {
+            object-fit: contain;
+        }
+
+        .d-flex .essential:hover {
+            text-decoration: underline;
+        }
+
+        .myCard{
+            display: flex;
+            gap: 15px;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        .card{
+            flex-basis: 25%;
+        }
+
+        .footer a{
+            text-decoration: none;
+            color: black;
+            transition: 0.5s;
+        }
+
+        .footer a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .show{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .icon{
+            display: flex;
+            flex-direction: column;
+            gap:10px
+        }
+
+        .icon img{
+            width: 100%;
+        }
+
+        @media  (max-width: 700px) {
+            .footer-container{
+                position: relative;
+            }
+            .hide {
+                visibility: hidden;
+            }
+
+            .show{
+                position: absolute;
+            }
+
+            .icon{
+                flex-direction: column;
+            }
+        }
+
+        @media  (max-width: 1000px) {
+            .footer-container{
+                position: relative;
+            }
+            .hide {
+                visibility: hidden;
+            }
+
+            .show{
+                position: absolute;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                gap: 30px;
+                top: 50px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .icon{
+                flex-direction: row;
+            }
+
+            .myCard{
+                flex-wrap: wrap;
+            }
+            .card {
+                flex-basis: 48%;
+            }
+
+            .list-group{
+                display: none;
+            }
+            .myContainer{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- =================== Navigation================ -->
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container bg-white" style="width: 130rem;">
+                <a class="navbar-brand " href="#"><img style="width: 20rem;" src="../Images/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Help Centre</a>
+                        </li>
+                        <li class="nav-item border-start " style="margin-right: 20rem;">
+                            <a class="nav-link" href="#">Sell on Takealot</a>
+                        </li>
+                        <li class="nav-item border-end ">
+                            <a class="nav-link" href="#">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Registar</a>
+                        </li>
+                        <li class="nav-item border-start">
+                            <a class="nav-link" href="#">Orders</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                My Account
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">My Account</a></li>
+                                <li><a class="dropdown-item" href="#">Track Order</a></li>
+                                <li><a class="dropdown-item" href="#">Returns</a></li>
+                                <li><a class="dropdown-item" href="#">Credit & Refunds</a></li>
+                                <li><a class="dropdown-item" href="#">Product Reviews </a></li>
+                                <li><a class="dropdown-item" href="#">Invoices</a> </li>
+                                <li><a class="dropdown-item" href="#">Personal Details</a> </li>
+                                <li><a class="dropdown-item" href="#">Help Centre</a> </li>
+                            </ul>
+                    </ul>
+                    <i class="fa-solid fa-heart"
+                        style="color:white; background-color: red; padding: 5px; border-radius: 50%;"></i>
+                    <i class="fa-solid fa-cart-shopping"
+                        style="background-color: rgb(73, 130, 73); padding: 10px 15px;color: white; margin-left: 15px; border-radius: 15px; font-size: 0.8rem;">
+                        0</i>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+    <!-- =================== Navigation End================ -->
+
+
+
+    <div class="container-fluid bg-primary ">
+        <div class="container">
+            <div>
+                <nav class="navbar navbar-expand-lg">
+                    <form class="d-flex w-100" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search for products, brands..."
+                            aria-label="Search">
+                        <i class="fa-solid fa-magnifying-glass bg-dark text-white "
+                            style="margin-left: -30px; border-radius: 0 5px 5px 0 ; padding: 10px 20px"></i>
+                    </form>
+                </nav>
+            </div>
+
+            <div class="row">
+                <div class="row head">
+
+                    <ul>
+                        <li><a href="#">Printers</a></li>
+                        <li><a href="#">Ink Catridges</a></li>
+                        <li><a href="#">Writing & Drawing</a></li>
+                        <li><a href="#">Arts & Crafts</a></li>
+                        <li><a href="#">Offic Furniture</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ============= Side bar ================== -->
+    <div class="container-fluid bg-light">
+        <div class="container mt-2 pb-3 ">
+            <div style="text-align: center;">
+                <p style="font-size: 1.5rem; font-weight: bold;">
+                    Back To Work
+                </p>
+            </div>
+            <div class="row ">
+                <div class="col-3 ">
+                    <div class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action bg-dark text-white"
+                            aria-current="true">
+                            Shop by Department
+                        </button>
+                        <button type="button" class="list-group-item list-group-item-action">Virtual Shopping
+                            Assistants</button>
+                        <button type="button" class="list-group-item list-group-item-action">Automotive & DIY</button>
+                        <button type="button" class="list-group-item list-group-item-action">Baby & Toddler</button>
+                        <button type="button" class="list-group-item list-group-item-action">Beauty</button>
+                        <button type="button" class="list-group-item list-group-item-action">Books & Courses</button>
+                        <button type="button" class="list-group-item list-group-item-action">Camping & Outdoor</button>
+                        <button type="button" class="list-group-item list-group-item-action">Clothing, Shoes &
+                            Accessory</button>
+                        <button type="button" class="list-group-item list-group-item-action">Electronics</button>
+                        <button type="button" class="list-group-item list-group-item-action">Gaming & Media</button>
+                        <button type="button" class="list-group-item list-group-item-action">Garden, Pool & Patio</button>
+                        <button type="button" class="list-group-item list-group-item-action">Groceries & Household</button>
+    
+                        <button type="button" class="list-group-item list-group-item-action bg-success text-white">Daily
+                            Deals</button>
+                    </div>
+                </div>
+    
+                <!-- =========== Search =================== -->
+    
+                <div class="col-9 myContainer  ">
+    
+    
+    
+                    <!-- ================ Banner Session=================== -->
+                    <div class="row pt-2">
+                        <div class="col-12">
+                            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="10000">
+                                        <img src="../Images/banner-1.jpg" class="d-block w-100 " alt="...">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2000">
+                                        <img src="../Images/banner-2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../Images/banner-3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+    
+                                    <div class="carousel-item">
+                                        <img src="../Images/banner-4.jpg" class="d-block w-100" alt="...">
+                                    </div>
+    
+                                    <div class="carousel-item">
+                                        <img src="../Images/banner-5.jpg" class="d-block w-100" alt="...">
+                                    </div>
+    
+                                    <div class="carousel-item">
+                                        <img src="../Images/banner-6.jpg" class="d-block w-100" alt="...">
+                                    </div>
+    
+    
+                                </div>
+    
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+    
+    
+    
+                        </div>
+    
+    
+                    </div>
+    
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="https://www.takealot.com/back-to-work " class="essential">Back to Work Essentials</a>
+                        <a href="./takealot.html" class="btn btn-dark">View more</a>
+                    </div>
+                    
+                    
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="bg-light">
+                                <div class="myCard">
+                    
+                                    <div class="card" >
+                                        <img src="./Images/box-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Durable Lunch Box</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 229</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (47)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card">
+                                        <img src="./Images/box-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Luxurious Lunch Meal Bag</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 190</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (54)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" >
+                                        <img src="./Images/box-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Sistema 1.1L Ribbon Lunch with 1 Mini Bite - Blue</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 200</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (64)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" >
+                                        <img src="./Images/box-5.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Trendworld Lunch Meal Bag</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 179</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (44)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                    </div>
+    
+    
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="https://www.takealot.com/back-to-work " class="essential">Back to Work Essentials</a>
+                        <a href="./takealot.html" class="btn btn-dark">View more</a>
+                    </div>
+                    
+                    
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="bg-light">
+                                <div class="myCard">
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Durable Lunch Box</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 229</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (47)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Luxurious Lunch Meal Bag</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 190</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (54)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Sistema 1.1L Ribbon Lunch with 1 Mini Bite - Blue</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 200</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (64)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-5.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Trendworld Lunch Meal Bag</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 179</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (44)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                    </div>
+    
+    
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="https://www.takealot.com/back-to-work " class="essential">Back to Work Essentials</a>
+                        <a href="./takealot.html" class="btn btn-dark">View more</a>
+                    </div>
+                    
+                    
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="bg-light">
+                                <div class="myCard">
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Durable Lunch Box</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 229</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (47)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Luxurious Lunch Meal Bag</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 190</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (54)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Sistema 1.1L Ribbon Lunch with 1 Mini Bite - Blue</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 200</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (64)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-5.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Trendworld Lunch Meal Bag</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 179</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (44)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                    </div>
+    
+    
+    
+    
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="https://www.takealot.com/back-to-work " class="essential">Back to Work Essentials</a>
+                        <a href="./takealot.html" class="btn btn-dark">View more</a>
+                    </div>
+                    
+                    
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="bg-light">
+                                <div class="myCard">
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Durable Lunch Box</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 229</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (47)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Luxurious Lunch Meal Bag</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 190</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (54)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Sistema 1.1L Ribbon Lunch with 1 Mini Bite - Blue</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 200</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (64)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-5.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Trendworld Lunch Meal Bag</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 179</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (44)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                    </div>
+    
+    
+    
+    
+    
+                    <div class="d-flex justify-content-between mt-5">
+                        <a href="https://www.takealot.com/back-to-work " class="essential">Back to Work Essentials</a>
+                        <a href="./takealot.html" class="btn btn-dark">View more</a>
+                    </div>
+                    
+                    
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="bg-light">
+                                <div class="myCard">
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Durable Lunch Box</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 229</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (47)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Luxurious Lunch Meal Bag</p>
+                                            <p class="card-text mt-5" style="font-weight: bold; font-size: 1.2rem;">From R 190</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (54)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <p class="card-text">Sistema 1.1L Ribbon Lunch with 1 Mini Bite - Blue</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 200</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (64)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                    <div class="card" style="width: 18rem;">
+                                        <img src="./Images/box-5.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                    
+                                            <p class="card-text">Trendworld Lunch Meal Bag</p>
+                                            <p class="card-text mt-4" style="font-weight: bold; font-size: 1.2rem;">From R 179</p>
+                                            <p class="card-text"> <i class="fa-solid fa-star" style="color: rgb(255, 217, 0);"></i> 4.1 (44)
+                                            </p>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                    
+                            </div>
+                        </div>
+                    
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==========Footer=============== -->
+    <div class="container-fluid bg-white p-5">
+        <div class="container d-flex justify-content-between footer-container">
+            <div class="d-flex flex-column footer hide">
+                <h5>Shop</h5>
+                <a href="#">Daily Deals</a>
+                <a href="#">App Only Deals</a>
+                <a href="#">Clearance Sale</a>
+                <a href="#">Gift Vouchers</a>
+                <div class="mt-5 d-flex flex-column">
+                    <h5>Takealot.group</h5>
+                    <a href="#">Superbalist.com</a>
+                    <a href="#">Mr D</a>
+                </div>
+            </div>
+            <div class="d-flex flex-column footer hide">
+                <h5>Help</h5>
+                <a href="#">Help Centre</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Submit an Idea</a>
+                <a href="#">Suggest a Product</a>
+                <a href="#">Shipping & Delivery</a>
+                <a href="#">Takealot Pickup Points</a>
+                <a href="#">Returns</a>
+            </div>
+
+            <div class="d-flex flex-column footer hide">
+                <h5>Account</h5>
+                <a href="#">My Account</a>
+                <a href="#">Track Order</a>
+                <a href="#">Returns</a>
+                <a href="#">Personal Details</a>
+                <a href="#">Invoice</a>
+            </div>
+
+            <div class="d-flex flex-column footer hide">
+                <h5>Company</h5>
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Sell on Takealot</a>
+                <a href="#">Deliver for Takealot</a>
+                <a href="#">Press & News</a>
+                <a href="#">Competitions</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Human Rights Statement</a>
+                <a href="#">Speak Up Process</a>
+                <a href="#">Code of Advertising Practice</a>
+            </div>
+
+            <div class=" footer show">
+                <div>
+                    <h5>Download Our Apps</h5>
+                    <div class="icon mt-4">
+                        <img src="./Images/apple.svg" alt="">
+                        <img src="./Images/playstore.svg" alt="">
+                        <img src="./Images/gallary.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mt-5">
+                    <h5>Follow Us</h5>
+                    <i class="fa-brands fa-facebook me-3" style="color: blue;"></i>
+                    <i class="fa-brands fa-x-twitter me-3" style="color: blue;"></i>
+                    <i class="fa-brands fa-square-instagram" style="color: blue;"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="container-fluid bg-primary pt-5 pb-5" style="text-align: center; color: rgb(242, 242, 250); font-size: 1.2rem;">
+        &copy; Takealot Online (Pty) Ltd.
+    </div>
+
+    
+
+
+    <script src="../bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+
+</body>
+
+</html>
