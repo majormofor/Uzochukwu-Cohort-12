@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./Font-Awesome-Icon/css/all.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Contents</title>
+    <style>
+      * {
+        overflow-x: hidden;
+        box-sizing: border-box;
+      }
+  
+      img {
+        width: 100%;
+      }
+  
+      ::placeholder {
+        color: white !important;
+      }
+  
+      .recently img {
+        cursor: pointer;
+        transition: 0.5s;
+        border-radius: 10px;
+      }
+  
+      .recently img:hover {
+        transform: translate(1.2rem);
+      }
+  
+      .container-fluid a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        font-size: 1.3rem;
+        transition: 0.5s;
+      }
+  
+      .container-fluid a:hover {
+        color: rgb(190, 25, 75);
+      }
+  
+      .nav-item .nav-link {
+        transition: 0.5s;
+        color: white;
+        font-size: 1.2rem;
+      }
+  
+      .nav-item .nav-link:hover {
+        color: rgb(190, 25, 75);
+      }
+  
+      .footer{
+            height: 80vh;
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            align-items: center;
+          }
+  
+          .icon a{
+            font-size: 1.2rem;
+          }
+  
+          .icons div {
+            margin: 30px;
+          }
+  
+          @media (max-width:900px) {
+  
+            .container-fluid{
+              flex-wrap: wrap;
+            }
+            
+          }
+  
+    </style>
+</head>
+<body>
+    
+    <div class="box" style="position: relative;">
+    <!-- ======================== Navigation Start ======================= -->
+    <div class="container-fluid bg-dark " style="position: absolute; z-index: 99;">
+      <nav class="navbar navbar-dark  ">
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid pe-5" style="width: 100vw;">
+            <a class="navbar-brand text-white" href="#"><img src="./Images/iroko-logo.png" alt=""
+                style="width: 8rem;"></a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon bg-danger p-3"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="#">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#">TV Series</a>
+                </li>
+              </ul>
+              <form class="d-flex w-50 flex-lg-row flex-md-column flex-sm-column  " role="search"
+                style="position: relative;">
+                <i class="fa-solid fa-magnifying-glass"
+                  style="color: white; position: absolute; top: 20px; font-size: 1.5rem; margin-left: 20px;"></i>
+                <input class="form-control m-2 ps-5" type="search" placeholder="Search" aria-label="Search"
+                  style="background-color: rgb(75, 74, 74); outline: none; border: none;">
+                <button class="btn btn-danger m-2" type="submit" style="width: 40%;"> <a href="https://irokotv.com/sign-up">Sign Up</a> </button>
+                <button class="btn btn-dark m-2" type="submit" style="width: 40%;"> <a href="https://irokotv.com/sign-in">Login</a> </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </nav>
+  
+  
+    </div>
+        <!-- ======================== Navigation End ======================= -->
+        
+        <!-- ======================== Recently Added ======================= -->
+        <div class="container-fluid bg-dark text-white d-flex justify-content-between pt-5" style="margin-top: 50px;">
+          <a href="./irokotv.html" >Village & Traditional Epics</a>
+        </div>
+        
+        <div class="container-fluid bg-dark text-white d-flex justify-content-evenly pt-5" style="gap: 30px; ">
+        
+          <div class="recently">
+            <img src="./Images/vil-1.jpg" alt="">
+            <p>Losing Control</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/vil-2.jpg" alt="">
+            <p>A love like this</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/vil-3.jpg" alt="">
+            <p>Time and Chance</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/vil-4.jpg" alt="">
+            <p>Uncommon Events</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/vil-5.jpg" alt="">
+            <p>A Love like this</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/vil-6.jpg" alt="">
+            <p>Saint Yinda</p>
+          </div>
+        </div>
+        
+        <div class="container-fluid bg-dark text-white d-flex justify-content-evenly pt-5" style="gap: 30px; ">
+        
+          <div class="recently">
+            <img src="./Images/com-1.jpg" alt="">
+            <p>Losing Control</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/com-2.jpg" alt="">
+            <p>A love like this</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/com-3.jpg" alt="">
+            <p>Time and Chance</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/com-4.jpg" alt="">
+            <p>Uncommon Events</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/com-5.jpg" alt="">
+            <p>A Love like this</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/com-6.jpg" alt="">
+            <p>Saint Yinda</p>
+          </div>
+        </div>
+              
+        
+        <div class="container-fluid bg-dark text-white d-flex justify-content-evenly pt-5" style="gap: 30px; ">
+        
+          <div class="recently">
+            <img src="./Images/trending-1.jpg" alt="">
+            <p>Losing Control</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/trending-2.jpg" alt="">
+            <p>A love like this</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/trending-3.jpg" alt="">
+            <p>Time and Chance</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/trending-4.jpg" alt="">
+            <p>Uncommon Events</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/trending-5.jpg" alt="">
+            <p>A Love like this</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/trending-6.jpg" alt="">
+            <p>Saint Yinda</p>
+          </div>
+        </div>
+        
+        
+        <div class="container-fluid bg-dark text-white d-flex justify-content-evenly pt-5" style="gap: 30px;  ">
+        
+          <div class="recently">
+            <img src="./Images/add-1.jpg" alt="">
+            <p>Losing Control</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/add-2.jpg" alt="">
+            <p>A love like this</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/add-3.jpg" alt="">
+            <p>Time and Chance</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/add-4.jpg" alt="">
+            <p>Uncommon Events</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/add-5.jpg" alt="">
+            <p>A Love like this</p>
+          </div>
+        
+          <div class="recently">
+            <img src="./Images/add-6.jpg" alt="">
+            <p>Saint Yinda</p>
+          </div>
+        </div>
+
+ <!-- ======================== Recently Added End ======================= -->
+
+         <!-- ====================Footer======================= -->
+         <div class="container-fluid bg-dark footer" >
+
+          <div>
+            <a href="./irokotv.html"><img src="./Images/iroko-logo.png" alt=""></a>
+          </div>
+          <div>
+            <div class="icons">
+              <div class="icon d-flex flex-column">
+                <a href="https://irokotv.com/privacy-policy">Privacy Policy</a>
+                <a href="https://irokotv.com/terms-condition">Terms and Conditions</a>
+              </div>
+              <div class="icon d-flex justify-content-around">
+                <a href="https://web.facebook.com/irokotv?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/irokotv?"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/irokotv/"><i class="fa-brands fa-instagram"></i></a>
+                
+              </div>
+            </div>
+          </div>
+          <div>
+            <p>&COPY;2024 IROKOTV All Rights Reserved.</p>
+          </div>
+
+        </div>
+
+        <script src="./bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
